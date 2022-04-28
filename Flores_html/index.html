@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Sweet Spot</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://kit.fontawesome.com/698dd2c3cd.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+  </head>
+  <body>
+    <section class="header">
+      <nav>
+        <a href="index.html"
+          ><img src="./images/sweetspotlogo.png" alt="logo"
+        /></a>
+        <div class="nav-links" id="navLinks">
+          <i class="fa-solid fa-rectangle-xmark" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="./index.html">HOME</a></li>
+            <li><a href="./about.html">ABOUT</a></li>
+            <li><a href="./recipes.html">RECIPES</a></li>
+            <li><a href="./contactus.html">CONTACT</a></li>
+          </ul>
+        </div>
+        <i class="fa-solid fa-circle-chevron-down" onclick="showMenu()"></i>
+      </nav>
+      <div class="text-box">
+        <h1>Welcome To The Sweet Bakery Recipes,The Pleasure of Life</h1>
+        <a href="./recipes.html" class="hero-btn">Visit Us To know More</a>
+      </div>
+    </section>
+
+    <!--more-->
+
+    <section class="more">
+      <h1>Three of our favorite Sweets</h1>
+      <p>The best way to start the day, and end the night</p>
+      <p><button type="button"
+        onclick="document.getElementById('demo').innerHTML = Date()">
+        Click to display Date and Time.</button></p>
+      <p id="demo"></p>
+      <div class="row">
+        <div class="more-col">
+          <img src="./images/strawberrypie.jpeg" alt="pie">
+          <h3>Pie</h3>
+          <p>Strawberry Pie</p>
+        </div>
+        <div class="more-col">
+          <img src="./images/redvelvet.jpeg" alt="cake">
+          <h3>Cake</h3>
+          <p>Red Velvet Cake</p>
+        </div>
+        <div class="more-col">
+          <img src="./images/chocolatemuffin.jpeg" alt="muffin">
+          <h3>Muffin</h3>
+          <p>Chocholate-chip Muffin</p>
+        </div>
+      </div>
+    </section>
+    
+    <!---footer-->
+
+    <section class="footer">
+      <h4>Follow us on social media</h4>
+      <div class="icons">
+        <i class="fa-brands fa-facebook-square"></i>
+        <i class="fa-brands fa-twitter-square"></i>
+        <i class="fa-brands fa-instagram-square"></i>
+        <i class="fa-brands fa-linkedin"></i>
+      </div>
+    </section>
+
+    <!----Javascript toggle menu--->
+    <script>
+      var navLinks = document.getElementById("navLinks");
+      function showMenu(){
+        navLinks.style.right = "0";
+      }
+      function hideMenu(){
+        navLinks.style.right = "-200px";
+      }
+    </script>
+
+  </body>
+</html>
